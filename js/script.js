@@ -1,4 +1,4 @@
-/*!
+/*
  * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -9,14 +9,16 @@ var budget = 0,
     $budgetText = $('.budget-text'),
     $form = $('#contactForm'),
     $alerts = $('#alerts'),
-    $loginopts = $('.login-panel .nav li');
+    $loginopts = $('.login-panel .nav li'),
+    $nav = $('.navbar'),
+    navOuterHeight =  $nav.outerHeight();
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - navOuterHeight
         }, 700, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -54,7 +56,7 @@ document
 .setAttribute("data-offset-top", height);
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li:not(.dropdown) a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
@@ -105,24 +107,3 @@ $(function() {
         });
     });
 });
-/*
-var mainSwiper = new Swiper('.swiper-container-main', {
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    mousewheelControl: true,
-    direction: 'vertical',
-    centeredSlides: true,
-    grabCursor: 'true',
-    spaceBetween: 0,
-    //hashnav: true,
-    threshold:20,
-    speed: 300,
-    loop: true,
-
-
-        //scrollbar: '.swiper-scrollbar',
-        //direction: 'vertical',
-        slidesPerView: 'auto',
-        mousewheelControl: true,
-        freeMode: true
-});*/
