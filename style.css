@@ -863,14 +863,26 @@ form .row:first-child .floating-label-form-group {
 
 .ciaobadge {
 	height: 25vh;
+	position: relative;
 	background-image: url(http://ciaoagenciadigital.com/images/high-bg.jpg);
     background-size: cover;
     background-position: 100% 100%;
 }
 
+.ciaobadge .content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 2em; 
+}
+
 @media(max-width:767px) {
 	.ciaobadge {
 		height: 15vh;
+	}
+	.ciaobadge .content {
+    font-size: 1.5em;
 	}
 }
 
@@ -1292,6 +1304,13 @@ nav.navbar {
 
 #showcase .swiper-container {
     position: initial;
+}
+
+#showcase .swiper-lazy-preloader {
+    position: relative;
+    left: 50%;
+    margin: 3em;
+    margin-left: -21px;
 }
 
 
