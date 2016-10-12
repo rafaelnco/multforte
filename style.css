@@ -1417,7 +1417,7 @@ nav.navbar {
 
     position: relative;
     width: 100%;
-    padding: 1rem;
+    margin: 1rem;
 
     color: white;
     background-color: darkorange;
