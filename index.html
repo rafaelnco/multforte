@@ -17,25 +17,22 @@
 
         .swiper-scrollbar-white {
 
-    background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.5);
         }
         .swiper-scrollbar-white .swiper-scrollbar-drag {
 
-    background: rgba(255, 255, 255, 1);
+            background: rgba(255, 255, 255, 1);
         }
 
-    .swiper-container-body {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-container-body > .swiper-wrapper > .swiper-slide {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .swiper-container-hero > .swiper-wrapper {
-        align-items: center;
-    }
+        .swiper-container-body {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-container-body > .swiper-wrapper > .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
         </style>
     </head>
     <body id="page-top" class="index">
@@ -45,9 +42,9 @@
                 <!-- <div class="swiper-slide"> -->
                             <!-- Header -->
     <header class="myheader">
-            <div class="hero-container">
-                <div id="hero" class="hero container" style="background-image: url(img/cables.jpg)">
+            <div class="hero-container" style="background-image: url(img/cables.jpg)">
                     <div class="herobg"></div>
+                <div id="hero" class="hero container">
                     <div id="carouselportolio" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <!-- <ol class="carousel-indicators">
@@ -146,55 +143,96 @@
     <!-- showcase Grid Section -->
     <section id="showcase">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Orçamento</h2>
-                    <p>
-                        Selecione os serviços desejados com um toque!
-                    </p>
-                </div>
-            </div> -->
+            <div class="swiper-container swiper-container-showcase-header">
+                <div class="swiper-wrapper">
             
-            <div class="category" id="cat1"  style="background-image: url(img/cables.jpg)">
-                <div class="filter overlay" ></div>
+                    <div class="swiper-slide">
+            <div class="cat1"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
                 <div class="category-title">
-                    <div class="container">
+                    <div class="">
                         Eletrônicos
                     </div>
                 </div>
-    <style>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="cat2"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
+                <div class="category-title">
+                    <div class="">
+                        Acessórios
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="cat3"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
+                <div class="category-title">
+                    <div class="">
+                        Placas
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="cat4"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
+                <div class="category-title">
+                    <div class="">
+                        Entretenimento
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="cat5"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
+                <div class="category-title">
+                    <div class="">
+                        Utilitários
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="cat6"
+            style="background-image: url(img/cables.jpg); background-size: cover">
+                <div class="filter overlay"></div>
+                <div class="category-title">
+                    <div class="">
+                        Geral
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                </div>
+            </div>
 
-.swiper-container-showcase-cat1 .swiper-button-prev,
-.swiper-container-showcase-cat1 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'cornflowerblue'%2F%3E%3C%2Fsvg%3E");
-}
-.swiper-container-showcase-cat1 .swiper-button-next,
-.swiper-container-showcase-cat1 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'cornflowerblue'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
-  left: auto;
-}
-.swiper-container-showcase-cat1 .swiper-pagination-bullet-active {
-    background: cornflowerblue;
-}
-#cat1 .description {
-    color: cornflowerblue;
-}
-#showcase #cat1 .category-title {
-    background-color: cornflowerblue;
-}
-#showcase #cat1 .category-title {
-    background-color: transparent;
-    color: cornflowerblue;
-    width: initial;
-    padding: 0;
-    margin: 0 1.5em;
-    text-align: left;
-}
-#showcase #cat1 .category-title > .container {
-        border-bottom: solid cornflowerblue 1px;
-}
-    </style>
+            <div class="swiper-container swiper-container-showcase-all">
+                <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide">
+            <div class="category" id="cat1"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
+                    <div class="container">
+                        Eletrônicos
+                    </div>
+                </div> -->
                 <div class="container slider-container dragscroll">
                     <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat1 item-container"
                     data-toggle="buttons">
@@ -203,24 +241,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -231,7 +254,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -241,24 +263,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -269,7 +276,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -279,24 +285,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -307,7 +298,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -317,24 +307,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/disc.jpg" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -345,7 +320,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -355,24 +329,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/disc.jpg" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -383,7 +342,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -393,24 +351,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -421,7 +364,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -431,24 +373,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -459,7 +386,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -469,24 +395,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -497,7 +408,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -507,24 +417,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/disc.jpg" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -535,7 +430,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -545,24 +439,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/disc.jpg" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -573,7 +452,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
@@ -587,47 +465,17 @@
                     </div>
                 </div>
             </div>
+                    </div>
             
-            <div class="category" id="cat2"  style="background-image: url(img/cables.jpg)">
-                <div class="filter overlay" ></div>
-                <div class="category-title">
+                    <div class="swiper-slide">
+            <div class="category" id="cat2"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
                     <div class="container">
                         Acessórios
                     </div>
-                </div>
-    <style>
-
-.swiper-container-showcase-cat2 .swiper-button-prev,
-.swiper-container-showcase-cat2 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'tomato'%2F%3E%3C%2Fsvg%3E");
-}
-.swiper-container-showcase-cat2 .swiper-button-next,
-.swiper-container-showcase-cat2 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'tomato'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
-  left: auto;
-}
-.swiper-container-showcase-cat2 .swiper-pagination-bullet-active {
-    background: tomato;
-}
-#cat2 .description {
-    color: tomato;
-}
-#showcase #cat2 .category-title {
-    background-color: tomato;
-}
-#showcase #cat2 .category-title {
-    background-color: transparent;
-    color: tomato;
-    width: initial;
-    padding: 0;
-    margin: 0 1.5em;
-    text-align: left;
-}
-#showcase #cat2 .category-title > .container {
-        border-bottom: solid tomato 1px;
-}
-    </style>
+                </div> -->
                 <div class="container slider-container dragscroll">
                     <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat2 item-container"
                     data-toggle="buttons">
@@ -636,24 +484,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -664,7 +497,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: tomato;border-color: tomato;">Comprar!</div>
@@ -674,24 +506,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -702,7 +519,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: tomato;border-color: tomato;">Comprar!</div>
@@ -712,24 +528,9 @@
                             <div class="swiper-slide showcase-item">
                                 <div class="showcase-link">
                                     <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
-                                    <!-- <img src="img/portfolio/ram.png" class="img-responsive" alt=""> -->
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
-                                    <!-- <span class="badge">
-                                        R$ 100
-                                    </span>
-                                    <span class="badge badge-status">
-                                        <i class="fa fa-check"></i>
-                                    </span> -->
                                     <div class="description overlay">
-                                        <!-- <p>
-                                            Lorem Ipsum!
-                                        </p>
-                                        <h4>
-                                            Memória RAM 3GB
-                                        </h4> -->
-
-
                                         <div class="promotion-title">
                                             Memória RAM 3GB
                                         </div>
@@ -740,7 +541,6 @@
                                             Por R$ <span>100</span>
                                         </div>
                                         
-                                    <!-- </li> -->
                                     </div>
                                         <div class="btn btn-default button"
                                             style="background-color: tomato;border-color: tomato;">Comprar!</div>
@@ -754,12 +554,366 @@
                     </div>
                 </div>
             </div>
+                    </div>
             
-            <!-- <div class="col-lg-8 col-lg-offset-2 text-center page-scroll">
-                <a href="#contact" class="btn btn-lg btn-success">
-                    <i class="fa fa-rocket"></i> Contratar!
-                </a>
-            </div> -->
+                    <div class="swiper-slide">
+            <div class="category" id="cat3"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
+                    <div class="container">
+                        Placas
+                    </div>
+                </div> -->
+                <div class="container slider-container dragscroll">
+                    <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat3 item-container"
+                    data-toggle="buttons">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination swiper-pagination swiper-pagination-showcase-cat3"></div>
+                        <div class="swiper-button-next swiper-button swiper-button-next-showcase-cat3"></div>
+                        <div class="swiper-button-prev swiper-button swiper-button-prev-showcase-cat3"></div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="category" id="cat4"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
+                    <div class="container">
+                        Entretenimento
+                    </div>
+                </div> -->
+                <div class="container slider-container dragscroll">
+                    <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat4 item-container"
+                    data-toggle="buttons">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination swiper-pagination swiper-pagination-showcase-cat4"></div>
+                        <div class="swiper-button-next swiper-button swiper-button-next-showcase-cat4"></div>
+                        <div class="swiper-button-prev swiper-button swiper-button-prev-showcase-cat4"></div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="category" id="cat5"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
+                    <div class="container">
+                        Utilitários
+                    </div>
+                </div> -->
+                <div class="container slider-container dragscroll">
+                    <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat5 item-container"
+                    data-toggle="buttons">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination swiper-pagination swiper-pagination-showcase-cat5"></div>
+                        <div class="swiper-button-next swiper-button swiper-button-next-showcase-cat5"></div>
+                        <div class="swiper-button-prev swiper-button swiper-button-prev-showcase-cat5"></div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+            <div class="category" id="cat6"
+            style="background-image: url(img/cables.jpg)">
+                <div class="filter overlay"></div>
+                <!-- <div class="category-title">
+                    <div class="container">
+                        Geral
+                    </div>
+                </div> -->
+                <div class="container slider-container dragscroll">
+                    <div class="swiper-container swiper-container-showcase swiper-container-showcase-cat6 item-container"
+                    data-toggle="buttons">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide showcase-item">
+                                <div class="showcase-link">
+                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
+                                    <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
+                                    <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+                                    <div class="description overlay">
+                                        <div class="promotion-title">
+                                            Memória RAM 3GB
+                                        </div>
+                                        <div class="promotion-details">
+                                            Lorem Ipsum!
+                                        </div>
+                                        <div class="promotion-price">
+                                            Por R$ <span>100</span>
+                                        </div>
+                                        
+                                    </div>
+                                        <div class="btn btn-default button"
+                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination swiper-pagination swiper-pagination-showcase-cat6"></div>
+                        <div class="swiper-button-next swiper-button swiper-button-next-showcase-cat6"></div>
+                        <div class="swiper-button-prev swiper-button swiper-button-prev-showcase-cat6"></div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            
+                </div>
+            </div>
         </div>
     </section>
                 <!-- </div> -->
@@ -874,6 +1028,30 @@
                                         </a>
                                     </li>
                                 
+                                    <li class="page-scroll">
+                                        <a href="#cat3">
+                                            Placas
+                                        </a>
+                                    </li>
+                                
+                                    <li class="page-scroll">
+                                        <a href="#cat4">
+                                            Entretenimento
+                                        </a>
+                                    </li>
+                                
+                                    <li class="page-scroll">
+                                        <a href="#cat5">
+                                            Utilitários
+                                        </a>
+                                    </li>
+                                
+                                    <li class="page-scroll">
+                                        <a href="#cat6">
+                                            Geral
+                                        </a>
+                                    </li>
+                                
                                 </ul>
                             </li>
                         
@@ -906,81 +1084,5 @@
 
     swiperBody.on('onSlideChangeStart', function(instance) {
     });
-    </script>
-    <script>
-    var swiper = new Swiper('.swiper-container-hero', {
-        pagination: '.swiper-pagination-hero',
-        nextButton: '.swiper-button-next-hero',
-        prevButton: '.swiper-button-prev-hero',
-        lazyLoading: true,
-        paginationClickable: true,
-        grabCursor: true,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        threshold:20,
-       /* breakpoints: {
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            }
-        }*/
-    });
-    
-    
-    
-    
-    
-    var swiper = new Swiper('.swiper-container-showcase-cat1', {
-        pagination: '.swiper-pagination-showcase-cat1',
-        nextButton: '.swiper-button-next-showcase-cat1',
-        prevButton: '.swiper-button-prev-showcase-cat1',
-        paginationClickable: true,
-        slidesPerView: 5,
-        /*freeMode: true,*/
-        grabCursor: true,
-        /*mousewheelControl: true,*/
-        lazyLoading: true,
-        threshold:20,
-        breakpoints: {
-            768: {
-                slidesPerView: 1
-            }
-        }
-    });
-    
-    var swiper = new Swiper('.swiper-container-showcase-cat2', {
-        pagination: '.swiper-pagination-showcase-cat2',
-        nextButton: '.swiper-button-next-showcase-cat2',
-        prevButton: '.swiper-button-prev-showcase-cat2',
-        paginationClickable: true,
-        slidesPerView: 5,
-        /*freeMode: true,*/
-        grabCursor: true,
-        /*mousewheelControl: true,*/
-        lazyLoading: true,
-        threshold:20,
-        breakpoints: {
-            768: {
-                slidesPerView: 1
-            }
-        }
-    });
-    
-    
-    
-    
-    
     </script>
 </html>
