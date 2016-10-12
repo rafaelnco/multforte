@@ -4290,20 +4290,22 @@ var swiper = new Swiper('.swiper-container-showcase-cat6', {
     }
 });
 
+
 var swiperShowcaseHeader = new Swiper('.swiper-container-showcase-header', {
     lazyLoading: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+        mousewheelControl: true,
     grabCursor: true,
     slideToClickedSlide: true,
-    //loop: true,
+    loop: true,
     threshold:20
 });
 var swiperShowcaseAll = new Swiper('.swiper-container-showcase-all', {
     lazyLoading: true,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     grabCursor: true,
-    //loop: true,
+    loop: true,
     threshold:20
 });
 
