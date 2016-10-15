@@ -40,6 +40,7 @@
             <div class="swiper-wrapper"> -->
                     
                 <!-- <div class="swiper-slide"> -->
+                        
                             <!-- Header -->
     <header class="myheader">
             <div class="hero-container" style="background-image: url(img/cables.jpg)">
@@ -80,7 +81,7 @@
                                                     12x <span>R$ 233</span>
                                                     </div>
                                                 
-                                                <div class="btn btn-default button">Comprar!</div>
+                                                <!-- <div class="btn btn-default button">Comprar!</div> -->
                                             <!-- </li> -->
                                         </div>
                                     </div>
@@ -109,7 +110,7 @@
                                                     12x <span>R$ 33</span>
                                                     </div>
                                                 
-                                                <div class="btn btn-default button">Comprar!</div>
+                                                <!-- <div class="btn btn-default button">Comprar!</div> -->
                                             <!-- </li> -->
                                         </div>
                                     </div>
@@ -140,9 +141,10 @@
                     
                 <!-- <div class="swiper-slide"> -->
                         
+                        
     <!-- showcase Grid Section -->
-    <section id="showcase">
-        <div class="container">
+    <section id="cart">
+        <div >
             <div class="swiper-container swiper-container-showcase-header">
                 <div class="swiper-wrapper">
             
@@ -150,7 +152,7 @@
             <div class="cat1"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat1" class="category-title">
                     <!-- <div class=""> -->
                         Eletrônicos
                     <!-- </div> -->
@@ -162,7 +164,7 @@
             <div class="cat2"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat2" class="category-title">
                     <!-- <div class=""> -->
                         Acessórios
                     <!-- </div> -->
@@ -174,7 +176,7 @@
             <div class="cat3"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat3" class="category-title">
                     <!-- <div class=""> -->
                         Placas
                     <!-- </div> -->
@@ -186,7 +188,7 @@
             <div class="cat4"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat4" class="category-title">
                     <!-- <div class=""> -->
                         Entretenimento
                     <!-- </div> -->
@@ -198,7 +200,7 @@
             <div class="cat5"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat5" class="category-title">
                     <!-- <div class=""> -->
                         Utilitários
                     <!-- </div> -->
@@ -210,7 +212,7 @@
             <div class="cat6"
             style="background-image: url(img/cables.jpg); background-size: cover">
                 <div class="filter overlay"></div>
-                <div class="category-title">
+                <div id="cat6" class="category-title">
                     <!-- <div class=""> -->
                         Geral
                     <!-- </div> -->
@@ -238,9 +240,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -255,14 +256,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -277,14 +278,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -299,14 +300,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -321,14 +322,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -343,14 +344,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -365,14 +366,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -387,14 +388,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -409,14 +410,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -431,14 +432,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/disc.jpg" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -453,8 +454,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: cornflowerblue;border-color: cornflowerblue;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -481,9 +483,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -498,14 +499,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -520,14 +521,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -542,14 +543,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -564,14 +565,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -586,14 +587,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -608,8 +609,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: tomato;border-color: tomato;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -636,9 +638,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -653,14 +654,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -675,14 +676,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -697,14 +698,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -719,14 +720,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -741,14 +742,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -763,8 +764,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: teal;border-color: teal;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -791,9 +793,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -808,14 +809,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -830,14 +831,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -852,14 +853,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -874,14 +875,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -896,14 +897,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -918,8 +919,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: blueviolet;border-color: blueviolet;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -946,9 +948,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -963,14 +964,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -985,14 +986,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1007,14 +1008,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1029,14 +1030,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1051,14 +1052,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1073,8 +1074,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: orange;border-color: orange;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -1101,9 +1103,8 @@
                     data-toggle="buttons">
                         <div class="swiper-wrapper">
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1118,14 +1119,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1140,14 +1141,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1162,14 +1163,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1184,14 +1185,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1206,14 +1207,14 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div class="swiper-slide showcase-item">
+                            <div class="swiper-slide showcase-item" data-price="100">
                                 <div class="showcase-link">
-                                    <input type="checkbox" autocomplete="off" onchange="updateBudget(this.checked,100)">
                                     <img data-src="img/portfolio/ram.png" class="img-responsive swiper-lazy"></img>
                                     <div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
                                     <div class="description overlay">
@@ -1228,8 +1229,9 @@
                                         </div>
                                         
                                     </div>
-                                        <div class="btn btn-default button"
-                                            style="background-color: seagreen;border-color: seagreen;">Comprar!</div>
+                                    <div class="btn btn-default cart-button button">
+                                        Comprar
+                                    </div>
                                 </div>
                             </div>
                         
@@ -1245,16 +1247,45 @@
                 </div>
             </div>
         </div>
+        <div class="container cart-container">
+            <div class="separator cart-summary category-title">
+                <span class="budget">Faça seu orçamento online!</span>
+            </div>
+            <div class="cart" style="display: none">
+                <div class="swiper-container swiper-container-showcase-calc item-container"
+                data-toggle="buttons">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination swiper-pagination swiper-pagination-showcase-calc"></div>
+                    <div class="swiper-button-next swiper-button swiper-button-next-showcase-calc"></div>
+                    <div class="swiper-button-prev swiper-button swiper-button-prev-showcase-calc"></div>
+                </div>
+            </div>
+        </div>
     </section>
                 <!-- </div> -->
                     
                 <!-- <div class="swiper-slide"> -->
+                        
+                            <!-- Footer -->
+    <section id="newsletter" class="container">
+        <div class="flex-v spaced col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="big-text text-center">Receba nossa newsletter semanal!</div>
+            <input class="big-text text-center" type="text" name="mail" placeholder="meu@email.com.br"/>
+            <div class="big-text text-center btn btn-default button">Aceito receber newsletter!</div>
+        </div>
+    </section>
+                <!-- </div> -->
+                    
+                <!-- <div class="swiper-slide"> -->
+                        
                             <!-- Footer -->
     <section id="footer" class="text-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-xs-12">
-                    <img src="img/template.jpg" class="logo img-responsive"></img>
+                    <img src="img/template.jpg" class="logo img-responsive">
+                    </img>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <h4>MULT FORTE</h4>
@@ -1263,7 +1294,7 @@
                 <div class="col-sm-3 col-xs-12">
                     <h4>Endereço</h4>
                     <div>Campina Grande, Paraíba</div>
-                    <div>Rua Josefina Maria da Conceição, 378B - Liberdade</div>
+                    <div>Av. Marechal Floriano Peixoto, Centro</div>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <h4>Contato</h4>
@@ -1279,6 +1310,12 @@
                 </div>
             </div>
         </div>
+
+                <div id="maps">
+                    <div id="map"><script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD00hEZVLLLw0OGrBSWZV515j8IinCbe8&callback=initMap">
+    </script></div>
+                </div>
     </section>
                 <!-- </div> -->
                     
@@ -1347,42 +1384,48 @@
                                 <ul class="dropdown-menu">
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat1">
+                                        <a href="#cat1" data-slide="0">
                                             Eletrônicos
                                         </a>
                                     </li>
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat2">
+                                        <a href="#cat2" data-slide="1">
                                             Acessórios
                                         </a>
                                     </li>
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat3">
+                                        <a href="#cat3" data-slide="2">
                                             Placas
                                         </a>
                                     </li>
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat4">
+                                        <a href="#cat4" data-slide="3">
                                             Entretenimento
                                         </a>
                                     </li>
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat5">
+                                        <a href="#cat5" data-slide="4">
                                             Utilitários
                                         </a>
                                     </li>
                                 
                                     <li class="page-scroll">
-                                        <a href="#cat6">
+                                        <a href="#cat6" data-slide="5">
                                             Geral
                                         </a>
                                     </li>
                                 
                                 </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="page-scroll">
+                                <a href="#newsletter">Newsletter</a>
                             </li>
                         
                     
@@ -1400,6 +1443,10 @@
     </nav>
         
     </body>
+    <div id="alerts">
+        <div class="alerts col-xs-12 col-sm-6 col-sm-offset-3">
+        </div>
+    </div>
     <script src="script.js"></script>
     <script>
     /*var swiperBody = new Swiper('.swiper-container-body', {
