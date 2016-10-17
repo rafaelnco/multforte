@@ -4217,12 +4217,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat1', {
     prevButton: '.swiper-button-prev-showcase-cat1',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4233,12 +4234,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat2', {
     prevButton: '.swiper-button-prev-showcase-cat2',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4249,12 +4251,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat3', {
     prevButton: '.swiper-button-prev-showcase-cat3',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4265,12 +4268,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat4', {
     prevButton: '.swiper-button-prev-showcase-cat4',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4281,12 +4285,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat5', {
     prevButton: '.swiper-button-prev-showcase-cat5',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4297,12 +4302,13 @@ var swiper = new Swiper('.swiper-container-showcase-cat6', {
     prevButton: '.swiper-button-prev-showcase-cat6',
     paginationClickable: true,
     lazyLoading: true,
-    slidesPerView: 5,
+    slidesPerView: 6,
     grabCursor: true,
+    nested: true,
     threshold:20,
     breakpoints: {
         768: {
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
@@ -4316,13 +4322,17 @@ var swiperShowcaseHeader = new Swiper('.swiper-container-showcase-header', {
     grabCursor: true,
     slideToClickedSlide: true,
     loop: true,
+    //loopedSlides: 5,
     threshold:20
 });
 var swiperShowcaseAll = new Swiper('.swiper-container-showcase-all', {
     lazyLoading: true,
     slidesPerView: 'auto',
     grabCursor: true,
+    //nested: true,
+    //noSwiping: false,
     loop: true,
+    //loopedSlides: 5,
     threshold:20
 });
 var swiperShowcaseCalc = new Swiper('.swiper-container-showcase-calc', {
@@ -4337,10 +4347,13 @@ var swiperShowcaseCalc = new Swiper('.swiper-container-showcase-calc', {
     threshold:20
 });
 
+
 var budget = 0;
 var $budget = $('.budget'),
+    $budgetStatus = $('.budgetstatus'),
     $alerts = $('.alerts'),
-    $cart = $('.cart-container .cart');
+    $cart = $('.cart-container .cart'),
+    $cartSummary = $('.cart-summary');
 
 function send(message) {
     $alerts.append('<div class="alert alert-warning alert-dismissable" style="display: none"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><span>'+message+'</span></div>');
@@ -4370,12 +4383,15 @@ function send(message) {
 function updateBudget(value) {
     if(budget == 0) {
         $cart.fadeIn('slow');//removeClass('hidden');
+        $cartSummary.fadeIn('slow');
     }
     budget += value;
     if(budget == 0) {
         $cart.fadeOut('slow');
-        $budget.text('Faça seu orçamento online!');
+        $cartSummary.fadeOut('slow');
+        $budgetStatus.text('Faça seu orçamento online!');
     } else {
+        $budgetStatus.text('Seu carrinho:');
         $budget.text('Seu orçamento é de R$ '+budget);
     }
     //$('.cart-container .cart-summary').fadeIn('slow'); //.removeClass('hidden');
@@ -4542,6 +4558,26 @@ $(function() {
 
 swiperShowcaseAll.params.control = swiperShowcaseHeader;
 swiperShowcaseHeader.params.control = swiperShowcaseAll;
+
+
+/*var changing = false;
+swiperShowcaseHeader.on('onSlideChangeEnd', function(instance) {
+    if(!changing) {
+        var i = swiperShowcaseHeader.activeIndex % swiperShowcaseAll.slides.length;
+        swiperShowcaseAll.slideTo(i);
+        changing = true;
+        setTimeout(function(){changing=false;},350);
+    }
+});
+swiperShowcaseAll.on('onSlideChangeEnd', function(instance) {
+    if(!changing) {
+        var i = swiperShowcaseAll.activeIndex % swiperShowcaseHeader.slides.length;
+        swiperShowcaseHeader.slideTo(i);
+        changing = true;
+        setTimeout(function(){changing=false;},350);            
+    }
+});*/
+
 /*
 $('.swiper-container-showcase-header')
 .scroll(function() {
@@ -4857,6 +4893,8 @@ var poi = {lat: -7.223142, lng: -35.8907513};
 
 var path = "M12 0c-5.522 0-10 4.395-10 9.815 0 5.505 4.375 9.268 10 14.185 5.625-4.917 10-8.68 10-14.185 0-5.42-4.478-9.815-10-9.815zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8z";
 
+var $map = document.getElementById('map');
+
 var map;
 function initMap() {
     var icon = {
@@ -4868,7 +4906,7 @@ function initMap() {
         scale: 2
     }
 
-    map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map($map, {
         center: poi,
         scrollwheel: false,
         zoom: 17,
@@ -4883,7 +4921,7 @@ function initMap() {
     });
 
 //  var primaryColor = "#4682b4";
-  var primaryColor = "#6495ed";
+  var primaryColor = "#4682b4";
 
   map.set('styles', /*[
     {
@@ -5135,5 +5173,10 @@ function initMap() {
         ]
     }
 ]);
+
+/*google.maps.event.addListenerOnce(map, 'idle', function(){
+    $('#maps').removeClass('hidden');
+});*/
+
 }
 
