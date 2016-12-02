@@ -7116,7 +7116,7 @@ k.getValue=K;k.path=function(a){a=f.str(a)?F(a)[0]:a;return{path:a,value:a.getTo
 	setTimeout(
 		function(){
 //			$('#abertura2').addClass('loaded');
-			$('#abertura2').fadeIn(5000);		
+			$('#abertura2').slideDown(1000);		
 			phrase1.animate()
 		},1500)
 	$('#abertura2')

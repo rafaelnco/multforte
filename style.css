@@ -1156,6 +1156,10 @@ nav.navbar {
 	margin: 0 auto;
 }
 
+@media(max-width:767px) {
+.letters {
+	padding: 3em 0;
+}}
 
 /* Letter path */
 
@@ -7731,26 +7735,26 @@ nav.navbar {
     width: 100%;
     padding: 2em 0;
 
-    color: #4682b4;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #4682b4;
 
 }
 
 #newsletter55 input {
     /*width: 100%;*/
-    color: #4682b4;
+    color: #ffffff;
 }
 #newsletter55 .icon {
-    fill: #4682b4;
+    fill: #ffffff;
 }
 #newsletter55 .button {
     font-size: inherit;
 
     padding: 0.5rem;
     
-    color: #4682b4;
-    border-color: #4682b4;
-    background-color: #ffffff;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #4682b4;
 }
 
 
