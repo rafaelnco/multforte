@@ -6349,482 +6349,58 @@ else if (typeof define === 'function' && define.amd) {
 
     
     
-var $navbar = document  
-            .getElementById("menu1"),
-    height = $navbar.offsetHeight;
+var swiperShowcasemenu1Header = new Swiper(
+    '.swiper-container-showcase-menu1-header',
+    {
+        slideToClickedSlide: true,
+        mousewheelControl: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        lazyLoading: true,
+        grabCursor: true,
+        threshold:20,
+        loop: true,
+        //loopedSlides: 5,
+    });
+var swiperShowcasemenu1All = new Swiper(
+    '.swiper-container-showcase-menu1-all',
+    {
+        slidesPerView: 'auto',
+        lazyLoading: true,
+        grabCursor: true,
+        threshold:20,
+        loop: true,
+        //noSwiping: false,
+        //loopedSlides: 5,
+        //nested: true,
+    });
 
-$navbar.setAttribute("data-offset-top", height);
+swiperShowcasemenu1All.params.control = swiperShowcasemenu1Header;
+swiperShowcasemenu1Header.params.control = swiperShowcasemenu1All;
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '#menu1',
-    offset: 200
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li:not(.dropdown) a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-
-/*$('#menu1 .nav li.dropdown > a')
-.click(function(e) {
-	console.log(e);
-	//e.stopPropagation();
-	//$(e.target).dropdown('toggle')
-	$(e.target.parentNode).addClass('open')
-})*/
-
-
-
-
-var $nav = $('.navbar'),
-    navOuterHeight =  $nav.outerHeight();
-
-function menu1navigateTobroadcastEvent (e) {
-    var event = new CustomEvent(
-    "navigateTo", 
-        {
-            detail: e,
-            bubbles: true,
-            cancelable: true
+function menu1navigateToEventHandler(e) {
+//    console.log(e.detail.target.dataset);
+    if(e.detail.target.dataset.keypath) {
+        var kp = JSON.parse(e.detail.target.dataset.keypath);
+//        console.log(kp);
+//        console.log('menu1')
+//        if(kp[0] == 'menu1' && kp.length > 1) {
+        console.log(e.detail.target.dataset);
+        if(kp.length) {
+            swiperShowcasemenu1Header
+            .slideTo(e.detail.target.dataset.index);
         }
-    );
-    
-    
-
-        
-        
-
-        
-        
-
-        //console.log('abertura2');
-        var nodeSection = document.getElementById('abertura2');
-        if(nodeSection)
-            nodeSection.dispatchEvent(event);
-
-        
-    
-
-        
-        
-
-        
-        
-
-        //console.log('destaques3');
-        var nodeSection = document.getElementById('destaques3');
-        if(nodeSection)
-            nodeSection.dispatchEvent(event);
-
-        
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-    
-
-        
-        
-
-        
-        
-
-        //console.log('loja6');
-        var nodeSection = document.getElementById('loja6');
-        if(nodeSection)
-            nodeSection.dispatchEvent(event);
-
-        
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-
-
-
-    
-
-        
-        
-
-        
-        
-
-        //console.log('contato54');
-        var nodeSection = document.getElementById('contato54');
-        if(nodeSection)
-            nodeSection.dispatchEvent(event);
-
-        
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-
-    
-    
-    
-
-
-    
-}
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    //bs-example-navbar-collapse-1 a
-    //$('.page-scroll > a').bind('click', function(event) {
-    $('#bs-example-navbar-collapse-1  a')
-    .bind(
-        'click',
-        function(event) {
-            event.preventDefault();
-            if(event.target.classList.contains('dropdown-toggle')) {
-                event.target.parentElement.classList.toggle('open');
-            }
-                menu1navigateTobroadcastEvent(event);
-        });
-    $('#bs-example-navbar-collapse-1  > ul > li > a')
-    .bind(
-        'click',
-        function(event) {
-            console.log(event);
-            event.preventDefault();
-            var $anchor = $(this);
-            if($anchor) {
-                var $next = $('#' + $anchor.attr('data-key'));
-                if($next && $next.offset()) {
-                    var distance =
-                        $next.offset().top - navOuterHeight;
-                    $('html, body').stop().animate({
-                        scrollTop: distance
-                    }, 500, 'easeInOutExpo', function() {});
-                    menu1navigateTobroadcastEvent(event);  
-                    
-                }
-            }
-        });
-});
-/*
-
-
-function menu1navigatedToEventHandler(e) {
-    console.log(e);
-    if(e.detail.keypath) {
-        var kp = e.detail.keypath.split(', '),
-            rootExp = "//*[@id='menu1']",
-            firstExp = "//*[@data-key='"+kp[0]+"']/..",
-            secondExp = "//*[@data-key='"+kp[1]+"']/..";
-
-        activateMenuItem(rootExp + firstExp);
-        activateMenuItem(rootExp + firstExp + secondExp);
     }
+
 }
 
-function activateMenuItem(exp) {
-    var iterator = document.evaluate(exp, document);
-    var element = iterator.iterateNext();
-    if(element)
-        element.classList.add('active');
-}
 
 document
 .getElementById('menu1')
 .addEventListener(
-    'navigatedTo',
-    menu1navigatedToEventHandler,
-    false);*/
-
+    'navigateTo',
+    menu1navigateToEventHandler,
+    false);
 
    	
 	    
