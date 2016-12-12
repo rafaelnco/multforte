@@ -13025,6 +13025,20 @@ function updateBudget2(value) {
     }
 };
 
+var swiperorc3a7amento54 = new Swiper('.swiper-container-orc3a7amento54', {
+    pagination: '.swiper-pagination-orc3a7amento54',
+    nextButton: '.swiper-button-next-orc3a7amento54',
+    prevButton: '.swiper-button-prev-orc3a7amento54',
+    paginationClickable: true,
+    lazyLoading: true,
+    grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+    spaceBetween: 0,
+    threshold:20,
+});
+
+
 
 
 function orc3a7amento54doCheckoutEventHandler (e) {
