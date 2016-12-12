@@ -12898,13 +12898,13 @@ var $budget = $('.budget'),
 
 function updateBudget(value) {
     if(budget == 0) {
-        $cart.slideDown('slow');
+        //$cart.slideDown('slow');
     }
     budget += value;
     if(budget) {
         $budgetStatus.text('Seu carrinho:');
     } else {
-        $cart.slideUp('slow');
+        //$cart.slideUp('slow');
         $budgetStatus.text('Faça seu orçamento online!');
     }
     if(value)
@@ -13017,25 +13017,61 @@ document
 
 function updateBudget2(value) {
     if(value) {
-        $cartSummary.slideDown('slow');
+        //$cartSummary.slideDown('slow');
         //$budget.text('Seu orçamento é de R$ '+value);
     } else {
-        $cartSummary.slideUp('slow');
+        //$cartSummary.slideUp('slow');
         //$budget.text('Faça seu orçamento online!');
     }
+
+    var parcel = 25;
+
+    swiperorc3a7amento54.removeAllSlides();
+
+    for(var i = 0; i < value / parcel && i < 24; i++) {
+        var sli = document.createElement('div');
+        sli.classList.add('swiper-slide');
+        /*if(!i)
+            sli.classList.add('swiper-slide-active');*/
+        sli.innerHTML =
+            `<div class="rel flex-v flex-start">
+                <div class="promotion-price">
+                    POR <span>R$ `+value+`</span>
+                </div>
+
+                <div class="promotion-parcels">
+                    `+(i+1)+`x <span>R$ `+parseFloat(value/(i+1)).toFixed(2)+`</span>
+                </div>
+            </div>`;
+        swiperorc3a7amento54.appendSlide(sli);
+    }
+    swiperorc3a7amento54.slideTo(0);
 };
 
 var swiperorc3a7amento54 = new Swiper('.swiper-container-orc3a7amento54', {
-    pagination: '.swiper-pagination-orc3a7amento54',
+   /* pagination: '.swiper-pagination-orc3a7amento54',
     nextButton: '.swiper-button-next-orc3a7amento54',
-    prevButton: '.swiper-button-prev-orc3a7amento54',
-    paginationClickable: true,
+    prevButton: '.swiper-button-prev-orc3a7amento54',*/
+
+
+    /*paginationClickable: true,
     lazyLoading: true,
     grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
     spaceBetween: 0,
-    threshold:20,
+    threshold:20,*/
+
+
+        slideToClickedSlide: true,
+        mousewheelControl: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        lazyLoading: true,
+        grabCursor: true,
+        threshold:50,
+        //loop: true,
 });
 
 
